@@ -1,0 +1,217 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.unihalle.informatik.MiToBo</groupId>
+  <artifactId>mitobo-pom</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>mitobo-pom</name>
+  <description>MiToBo - A Microscope Image Analysis TOolBox</description> 
+  <url>http://www.informatik.uni-halle.de/mitobo</url>
+  <inceptionYear>2018</inceptionYear>
+
+  <parent>
+    <groupId>de.unihalle.informatik.Alida</groupId>
+    <artifactId>alida-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <properties>
+    
+    <!-- settings for Alida/MiToBo stuff -->
+    <alida.version>2.7.6-SNAPSHOT</alida.version>
+    
+    <!-- define a default native directory, does not work in all cases,
+	 but avoids that Maven fails completely -->
+    <native.libdir>lib64</native.libdir>
+
+    <!-- versions of artifacts we depend on -->
+    <commons.math.version>3.6.1</commons.math.version>
+    <ejml.version>0.24</ejml.version>
+    <geopolygons.version>4.0</geopolygons.version>
+    <jama.version>1.0.3</jama.version>
+    <jfreechart.version>1.0.19</jfreechart.version>
+    <jri.version>0.9-9</jri.version>
+    <jstacs.version>2.2</jstacs.version>
+    <libsvm.version>3.17</libsvm.version>
+    <scijava.version>19.2.0</scijava.version>
+    <weka.version>3.9.1</weka.version>
+    
+  </properties>
+
+  <developers>
+    <developer>
+      <id>moeller</id>
+      <email>birgit.moeller@informatik.uni-halle.de</email>
+      <name>Birgit Moeller</name>
+      <organization>Martin Luther University Halle-Wittenberg</organization>
+      <organizationUrl>http://www.informatik.uni-halle.de/moeller</organizationUrl>
+      <roles>
+	<role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>posch</id>
+      <email>stefan.posch@informatik.uni-halle.de</email>
+      <name>Stefan Posch</name>
+      <organization>Martin Luther University Halle-Wittenberg</organization>
+      <organizationUrl>http://www.informatik.uni-halle.de/posch</organizationUrl>
+      <roles>
+	<role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>glass</id>
+      <email>markus.glass@medizin.uni-halle.de</email>
+      <name>Markus Glass</name>
+      <organization>Martin Luther University Halle-Wittenberg</organization>
+      <roles>
+	<role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>misiak</id>
+      <email>danny.misiak@informatik.uni-halle.de</email>
+      <name>Danny Misiak</name>
+      <organization>Martin Luther University Halle-Wittenberg</organization>
+      <roles>
+	<role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Compile dependencies -->
+      <dependency>
+	<groupId>gov.nist.math</groupId>
+	<artifactId>jama</artifactId>
+	<version>${jama.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
+	<artifactId>ejml</artifactId>
+	<version>${ejml.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>tw.edu.ntu.csie</groupId>
+	<artifactId>libsvm</artifactId>
+	<version>${libsvm.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>org.nuiton.thirdparty</groupId>
+	<artifactId>JRI</artifactId>
+	<version>${jri.version}</version>
+      </dependency>
+      <dependency>
+	<!-- used for numerical calculations, e.g., in vesselness package -->
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-math3</artifactId>
+	<version>${commons.math.version}</version>
+      </dependency>
+      <dependency>
+	<!-- used for clustering, e.g., in actin analysis -->
+	<groupId>nz.ac.waikato.cms.weka</groupId>
+	<artifactId>weka-dev</artifactId>
+	<version>${weka.version}</version>
+      </dependency>
+      <dependency>
+	<!-- used for data visualization, e.g., in actin analysis -->
+	<groupId>org.jfree</groupId>
+	<artifactId>jfreechart</artifactId>
+	<version>${jfreechart.version}</version>
+      </dependency>
+      <dependency>
+	<!-- used by MTBPolygon2D -->
+	<groupId>uk.co.geolib</groupId>
+	<artifactId>geopolygons</artifactId>
+	<version>${geopolygons.version}</version>
+      </dependency>
+      <!-- MLU stuff -->
+      <dependency>
+	<groupId>de</groupId>
+	<artifactId>jstacs</artifactId>
+	<version>${jstacs.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>de.unihalle.informatik.MiToBo</groupId>
+	<artifactId>mitobo-xml</artifactId>
+	<version>${mitobo.xml.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>de.unihalle.informatik.Alida</groupId>
+	<artifactId>alida</artifactId>
+	<version>${alida.version}</version>
+	<scope>compile</scope>
+      </dependency>
+      <!-- Native dependencies -->
+      <dependency>
+	<groupId>de.unihalle.informatik.MiToBo.native</groupId>
+	<artifactId>mitobo-native-${native.libdir}</artifactId>
+	<version>${mitobo.native.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>imagej.public</id>
+      <url>http://maven.imagej.net/content/groups/public</url>
+    </repository>
+  </repositories>
+
+  <scm>
+    <connection>scm:git:https://github.com/mitobo-hub/mitobo-pom.git</connection>
+    <developerConnection>scm:git:https://github.com/mitobo-hub/mitobo-pom.git</developerConnection>
+  </scm>
+
+  <profiles>
+    <!-- architecture dependent settings -->
+    <profile>
+      <id>linux-x86</id>
+      <activation>
+	<os>
+	  <arch>i386</arch>
+	</os>
+      </activation>
+      <properties>
+	<native.libdir>lib32</native.libdir>
+      </properties>
+    </profile>
+    <profile>
+      <id>linux-x64</id>
+      <activation>
+	<os>
+	  <arch>amd64</arch>
+	</os>
+      </activation>
+      <properties>
+	<native.libdir>lib64</native.libdir>
+      </properties>
+    </profile>
+    <profile>
+      <id>win32</id>
+      <activation>
+	<os>
+	  <arch>Windows</arch>
+	</os>
+      </activation>
+      <properties>
+	<native.libdir>win32</native.libdir>
+      </properties>
+    </profile>
+  </profiles>
+
+  <issueManagement>
+    <system>Github Issue Tracking</system>
+    <url>https://github.com/mitobo-hub/mitobo-pom/issues</url>
+  </issueManagement>
+
+</project>
+
