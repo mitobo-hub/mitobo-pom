@@ -22,6 +22,7 @@
     
     <!-- settings for Alida/MiToBo stuff -->
     <alida.version>2.7.6-SNAPSHOT</alida.version>
+    <mitobo.native.version>1.2</mitobo.native.version>
     
     <!-- define a default native directory, does not work in all cases,
 	 but avoids that Maven fails completely -->
@@ -138,11 +139,6 @@
 	<groupId>de</groupId>
 	<artifactId>jstacs</artifactId>
 	<version>${jstacs.version}</version>
-      </dependency>
-      <dependency>
-	<groupId>de.unihalle.informatik.MiToBo</groupId>
-	<artifactId>mitobo-xml</artifactId>
-	<version>${mitobo.xml.version}</version>
       </dependency>
       <dependency>
 	<groupId>de.unihalle.informatik.Alida</groupId>
