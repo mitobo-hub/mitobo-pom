@@ -157,6 +157,18 @@
 
   <repositories>
     <repository>
+      <id>snapshots</id>
+      <name>Archiva Public Snapshot Repository on 'moon'</name>
+      <url>https://moon.informatik.uni-halle.de/archiva/repository/snapshots-pub/</url>
+      <layout>default</layout>
+    </repository>
+    <repository>
+      <id>releases</id>
+      <name>Archiva Release Repository on 'moon'</name>
+      <url>https://moon.informatik.uni-halle.de/archiva/repository/releases/</url>
+      <layout>default</layout>
+    </repository>
+    <repository>
       <id>imagej.public</id>
       <url>http://maven.imagej.net/content/groups/public</url>
     </repository>
