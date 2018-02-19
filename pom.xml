@@ -36,7 +36,11 @@
     <jfreechart.version>1.0.19</jfreechart.version>
     <jri.version>0.9-9</jri.version>
     <jstacs.version>2.2</jstacs.version>
+    <jtransforms.version>3.0</jtransforms.version>
     <libsvm.version>3.17</libsvm.version>
+    <sc.fiji.legacy-imglib1.version>1.1.8</sc.fiji.legacy-imglib1.version>
+    <sc.fiji.bUnwarpJ.version>2.6.5</sc.fiji.bUnwarpJ.version>
+    <sc.fiji.mpicbg-trakem2.version>1.2.3</sc.fiji.mpicbg-trakem2.version>
     <scijava.version>19.2.0</scijava.version>
     <weka.version>3.9.1</weka.version>
     
@@ -133,6 +137,26 @@
 	<groupId>uk.co.geolib</groupId>
 	<artifactId>geopolygons</artifactId>
 	<version>${geopolygons.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>sc.fiji</groupId>
+	<artifactId>legacy-imglib1</artifactId>
+	<version>${sc.fiji.legacy-imglib1.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>sc.fiji</groupId>
+	<artifactId>bUnwarpJ_</artifactId>
+	<version>${sc.fiji.bUnwarpJ.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>sc.fiji</groupId>
+	<artifactId>mpicbg-trakem2</artifactId>
+	<version>${sc.fiji.mpicbg-trakem2.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>com.github.wendykierp</groupId>
+	<artifactId>JTransforms</artifactId>
+	<version>${jtransforms.version}</version>
       </dependency>
       <!-- MLU stuff -->
       <dependency>
