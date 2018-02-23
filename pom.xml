@@ -33,7 +33,7 @@
     <ejml.version>0.24</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
     <jama.version>1.0.3</jama.version>
-    <jfreechart.version>1.0.19</jfreechart.version>
+    <jfreechart.version>1.5.0</jfreechart.version>
     <jri.version>0.9-9</jri.version>
     <jstacs.version>2.2</jstacs.version>
     <jtransforms.version>3.0</jtransforms.version>
