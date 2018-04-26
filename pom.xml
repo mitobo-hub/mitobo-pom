@@ -30,7 +30,7 @@
 
     <!-- versions of artifacts we depend on -->
     <commons.math.version>3.6.1</commons.math.version>
-    <ejml.version>0.34</ejml.version>
+    <ejml.version>0.24</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
     <jama.version>1.0.3</jama.version>
     <jfreechart.version>1.5.0</jfreechart.version>
@@ -100,8 +100,8 @@
 	<version>${jama.version}</version>
       </dependency>
       <dependency>
-	<groupId>org.ejml</groupId>
-	<artifactId>ejml-core</artifactId>
+	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
+	<artifactId>ejml</artifactId>
 	<version>${ejml.version}</version>
       </dependency>
       <dependency>
