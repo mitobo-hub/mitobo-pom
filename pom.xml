@@ -4,7 +4,7 @@
 
   <groupId>de.unihalle.informatik.MiToBo</groupId>
   <artifactId>mitobo-pom</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>mitobo-pom</name>
@@ -15,13 +15,13 @@
   <parent>
     <groupId>de.unihalle.informatik.Alida</groupId>
     <artifactId>alida-pom</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
   </parent>
   
   <properties>
     
     <!-- settings for Alida/MiToBo stuff -->
-    <alida.version>2.7.6</alida.version>
+    <alida.version>2.7.7-SNAPSHOT</alida.version>
     <mitobo.native.version>1.2</mitobo.native.version>
     
     <!-- define a default native directory, does not work in all cases,
