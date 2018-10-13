@@ -29,6 +29,7 @@
     <native.libdir>lib64</native.libdir>
 
     <!-- versions of artifacts we depend on -->
+    <commons.lang3.version>3.5</commons.lang3.version>
     <commons.math.version>3.6.1</commons.math.version>
     <ejml.version>0.24</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
@@ -114,6 +115,11 @@
 	<groupId>org.nuiton.thirdparty</groupId>
 	<artifactId>JRI</artifactId>
 	<version>${jri.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons.lang3.version}</version>
       </dependency>
       <dependency>
 	<!-- used for numerical calculations, e.g., in vesselness package -->
