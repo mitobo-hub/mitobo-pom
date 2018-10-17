@@ -116,11 +116,13 @@
 	<artifactId>JRI</artifactId>
 	<version>${jri.version}</version>
       </dependency>
+      <!-- currently not in use 
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons.lang3.version}</version>
-      </dependency>
+	</dependency>
+	-->
       <dependency>
 	<!-- used for numerical calculations, e.g., in vesselness package -->
 	<groupId>org.apache.commons</groupId>
