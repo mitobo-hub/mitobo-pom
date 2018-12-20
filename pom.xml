@@ -44,7 +44,7 @@
     <sc.fiji.bUnwarpJ.version>2.6.9</sc.fiji.bUnwarpJ.version>
     <sc.fiji.mpicbg-trakem2.version>1.2.3</sc.fiji.mpicbg-trakem2.version>
     <scijava.version>23.2.0</scijava.version>
-    <weka.version>3.9.2</weka.version>
+    <weka.version>3.9.3</weka.version>
     
   </properties>
 
