@@ -40,8 +40,8 @@
     <jstacs.version>2.2</jstacs.version>
     <jtransforms.version>3.0</jtransforms.version>
     <libsvm.version>3.17</libsvm.version>
-    <sc.fiji.legacy-imglib1.version>1.1.8</sc.fiji.legacy-imglib1.version>
-    <sc.fiji.bUnwarpJ.version>2.6.5</sc.fiji.bUnwarpJ.version>
+    <sc.fiji.legacy-imglib1.version>1.1.9</sc.fiji.legacy-imglib1.version>
+    <sc.fiji.bUnwarpJ.version>2.6.9</sc.fiji.bUnwarpJ.version>
     <sc.fiji.mpicbg-trakem2.version>1.2.3</sc.fiji.mpicbg-trakem2.version>
     <scijava.version>23.2.0</scijava.version>
     <weka.version>3.9.2</weka.version>
