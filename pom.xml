@@ -36,6 +36,7 @@
     <jama.version>1.0.3</jama.version>
     <jfeaturelib.version>1.6.3</jfeaturelib.version>
     <jfreechart.version>1.5.0</jfreechart.version>
+    <jgrapht.version>1.2.0</jgrapht.version>
     <jri.version>0.9-9</jri.version>
     <jstacs.version>2.2</jstacs.version>
     <jtransforms.version>3.0</jtransforms.version>
@@ -153,6 +154,13 @@
 	<artifactId>geopolygons</artifactId>
 	<version>${geopolygons.version}</version>
       </dependency>
+      <dependency>
+	<!-- graph algorithms, e.g., used for Dijkstra gap closing -->
+	<groupId>org.jgrapht</groupId>
+	<artifactId>jgrapht-core</artifactId>
+	<version>${jgrapht.version}</version>
+      </dependency>
+      <!-- ImgLib stuff -->
       <dependency>
 	<groupId>sc.fiji</groupId>
 	<artifactId>legacy-imglib1</artifactId>
