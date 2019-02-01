@@ -33,6 +33,7 @@
     <commons.math.version>3.6.1</commons.math.version>
     <ejml.version>0.24</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
+    <imagej.ridge-detection.version>1.4.1</imagej.ridge-detection.version>
     <jama.version>1.0.3</jama.version>
     <jfeaturelib.version>1.6.3</jfeaturelib.version>
     <jfreechart.version>1.5.0</jfreechart.version>
@@ -159,6 +160,12 @@
 	<groupId>org.jgrapht</groupId>
 	<artifactId>jgrapht-core</artifactId>
 	<version>${jgrapht.version}</version>
+      </dependency>
+      <dependency>
+	<!-- Steger Ridge Detection in ImageJ -->
+	<groupId>de.biomedical-imaging.imagej</groupId>
+	<artifactId>ij_ridge_detect</artifactId>
+	<version>${imagej.ridge-detection.version}</version>
       </dependency>
       <!-- ImgLib stuff -->
       <dependency>
