@@ -28,25 +28,21 @@
 	 but avoids that Maven fails completely -->
     <native.libdir>lib64</native.libdir>
 
-    <!-- versions of artifacts we depend on -->
+    <!-- SciJava pom file defining several global dependencies
+	  and versions artifact versions MiToBo relies on -->
+    <scijava.version>25.0.0</scijava.version>
+
+    <!-- versions of additional artifacts we depend on -->
     <commons.lang3.version>3.5</commons.lang3.version>
-    <commons.math.version>3.6.1</commons.math.version>
     <ejml.version>0.24</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
     <imagej.ridge-detection.version>1.4.1</imagej.ridge-detection.version>
-    <jama.version>1.0.3</jama.version>
     <jfeaturelib.version>1.6.3</jfeaturelib.version>
-    <jfreechart.version>1.5.0</jfreechart.version>
-    <jgrapht.version>1.2.0</jgrapht.version>
     <jri.version>0.9-9</jri.version>
     <jstacs.version>2.2</jstacs.version>
     <jtransforms.version>3.0</jtransforms.version>
     <libsvm.version>3.17</libsvm.version>
-    <sc.fiji.legacy-imglib1.version>1.1.9</sc.fiji.legacy-imglib1.version>
-    <sc.fiji.bUnwarpJ.version>2.6.9</sc.fiji.bUnwarpJ.version>
     <sc.fiji.mpicbg-trakem2.version>1.2.3</sc.fiji.mpicbg-trakem2.version>
-    <scijava.version>23.2.0</scijava.version>
-    <weka.version>3.9.3</weka.version>
     
   </properties>
 
@@ -99,11 +95,6 @@
     <dependencies>
       <!-- Compile dependencies -->
       <dependency>
-	<groupId>gov.nist.math</groupId>
-	<artifactId>jama</artifactId>
-	<version>${jama.version}</version>
-      </dependency>
-      <dependency>
 	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 	<artifactId>ejml</artifactId>
 	<version>${ejml.version}</version>
@@ -126,24 +117,6 @@
 	</dependency>
 	-->
       <dependency>
-	<!-- used for numerical calculations, e.g., in vesselness package -->
-	<groupId>org.apache.commons</groupId>
-	<artifactId>commons-math3</artifactId>
-	<version>${commons.math.version}</version>
-      </dependency>
-      <dependency>
-	<!-- used for clustering, e.g., in actin analysis -->
-	<groupId>nz.ac.waikato.cms.weka</groupId>
-	<artifactId>weka-dev</artifactId>
-	<version>${weka.version}</version>
-      </dependency>
-      <dependency>
-	<!-- used for data visualization, e.g., in actin analysis -->
-	<groupId>org.jfree</groupId>
-	<artifactId>jfreechart</artifactId>
-	<version>${jfreechart.version}</version>
-      </dependency>
-      <dependency>
 	<!-- used for local binary pattern texture features -->
 	<groupId>de.lmu.ifi.dbs.jfeaturelib</groupId>
 	<artifactId>JFeatureLib</artifactId>
@@ -156,28 +129,12 @@
 	<version>${geopolygons.version}</version>
       </dependency>
       <dependency>
-	<!-- graph algorithms, e.g., used for Dijkstra gap closing -->
-	<groupId>org.jgrapht</groupId>
-	<artifactId>jgrapht-core</artifactId>
-	<version>${jgrapht.version}</version>
-      </dependency>
-      <dependency>
 	<!-- Steger Ridge Detection in ImageJ -->
 	<groupId>de.biomedical-imaging.imagej</groupId>
 	<artifactId>ij_ridge_detect</artifactId>
 	<version>${imagej.ridge-detection.version}</version>
       </dependency>
       <!-- ImgLib stuff -->
-      <dependency>
-	<groupId>sc.fiji</groupId>
-	<artifactId>legacy-imglib1</artifactId>
-	<version>${sc.fiji.legacy-imglib1.version}</version>
-      </dependency>
-      <dependency>
-	<groupId>sc.fiji</groupId>
-	<artifactId>bUnwarpJ_</artifactId>
-	<version>${sc.fiji.bUnwarpJ.version}</version>
-      </dependency>
       <dependency>
 	<groupId>sc.fiji</groupId>
 	<artifactId>mpicbg-trakem2</artifactId>
