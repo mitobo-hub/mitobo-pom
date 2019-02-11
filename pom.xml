@@ -28,10 +28,6 @@
 	 but avoids that Maven fails completely -->
     <native.libdir>lib64</native.libdir>
 
-    <!-- SciJava pom file defining several global dependencies
-	  and versions artifact versions MiToBo relies on -->
-    <scijava.version>25.0.0</scijava.version>
-
     <!-- versions of additional artifacts we depend on -->
     <commons.lang3.version>3.5</commons.lang3.version>
     <ejml.version>0.24</ejml.version>
@@ -94,16 +90,14 @@
   <dependencyManagement>
     <dependencies>
 
-      <!-- SciJava dependency -->
-      <dependency>
-	<groupId>org.scijava</groupId>
-	<artifactId>pom-scijava</artifactId>
-	<version>${scijava.version}</version>
-	<type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
       <!-- Compile dependencies -->
+
+      <!-- ... inherited from SciJava ...
+      <dependency>
+	<groupId>gov.nist.math</groupId>
+	<artifactId>jama</artifactId>
+      </dependency>
+      -->
       <dependency>
 	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 	<artifactId>ejml</artifactId>
@@ -125,7 +119,34 @@
         <artifactId>commons-lang3</artifactId>
         <version>${commons.lang3.version}</version>
 	</dependency>
-	-->
+      -->
+
+      <!-- ... inherited from SciJava ...
+      <dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-math3</artifactId>
+      </dependency>
+      <dependency>
+	<groupId>nz.ac.waikato.cms.weka</groupId>
+	<artifactId>weka-dev</artifactId>
+      </dependency>
+      <dependency>
+	<groupId>org.jfree</groupId>
+	<artifactId>jfreechart</artifactId>
+      </dependency>
+      <dependency>
+	<groupId>org.jgrapht</groupId>
+	<artifactId>jgrapht-core</artifactId>
+      </dependency>
+      <dependency>
+ 	<groupId>sc.fiji</groupId>
+	<artifactId>legacy-imglib1</artifactId>
+      </dependency>
+      <dependency>
+	<groupId>sc.fiji</groupId>
+	<artifactId>bUnwarpJ_</artifactId>
+      </dependency>
+      -->
       <dependency>
 	<!-- used for local binary pattern texture features -->
 	<groupId>de.lmu.ifi.dbs.jfeaturelib</groupId>
