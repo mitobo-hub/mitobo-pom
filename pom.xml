@@ -93,6 +93,16 @@
 
   <dependencyManagement>
     <dependencies>
+
+      <!-- SciJava dependency -->
+      <dependency>
+	<groupId>org.scijava</groupId>
+	<artifactId>pom-scijava</artifactId>
+	<version>${scijava.version}</version>
+	<type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <!-- Compile dependencies -->
       <dependency>
 	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
