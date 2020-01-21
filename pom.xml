@@ -21,7 +21,7 @@
   <properties>
     
     <!-- settings for Alida/MiToBo stuff -->
-    <alida.version>2.7.12-SNAPSHOT</alida.version>
+    <alida.version>2.7.13-SNAPSHOT</alida.version>
     <mitobo.native.version>1.2</mitobo.native.version>
     
     <!-- define a default native directory, does not work in all cases,
