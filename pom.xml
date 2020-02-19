@@ -29,15 +29,15 @@
     <native.libdir>lib64</native.libdir>
 
     <!-- versions of additional artifacts we depend on -->
-    <commons.lang3.version>3.5</commons.lang3.version>
-    <ejml.version>0.24</ejml.version>
+    <commons.lang3.version>3.9</commons.lang3.version>
+    <ejml.version>0.25</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
     <imagej.ridge-detection.version>1.4.1</imagej.ridge-detection.version>
     <jfeaturelib.version>1.6.3</jfeaturelib.version>
     <jri.version>0.9-9</jri.version>
     <jstacs.version>2.2</jstacs.version>
-    <jtransforms.version>3.0</jtransforms.version>
-    <libsvm.version>3.17</libsvm.version>
+    <jtransforms.version>3.1</jtransforms.version>
+    <libsvm.version>3.24</libsvm.version>
     <sc.fiji.mpicbg-trakem2.version>1.2.3</sc.fiji.mpicbg-trakem2.version>
     
   </properties>
@@ -92,12 +92,6 @@
 
       <!-- Compile dependencies -->
 
-      <!-- ... inherited from SciJava ...
-      <dependency>
-	<groupId>gov.nist.math</groupId>
-	<artifactId>jama</artifactId>
-      </dependency>
-      -->
       <dependency>
 	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 	<artifactId>ejml</artifactId>
@@ -119,33 +113,6 @@
         <artifactId>commons-lang3</artifactId>
         <version>${commons.lang3.version}</version>
 	</dependency>
-      -->
-
-      <!-- ... inherited from SciJava ...
-      <dependency>
-	<groupId>org.apache.commons</groupId>
-	<artifactId>commons-math3</artifactId>
-      </dependency>
-      <dependency>
-	<groupId>nz.ac.waikato.cms.weka</groupId>
-	<artifactId>weka-dev</artifactId>
-      </dependency>
-      <dependency>
-	<groupId>org.jfree</groupId>
-	<artifactId>jfreechart</artifactId>
-      </dependency>
-      <dependency>
-	<groupId>org.jgrapht</groupId>
-	<artifactId>jgrapht-core</artifactId>
-      </dependency>
-      <dependency>
- 	<groupId>sc.fiji</groupId>
-	<artifactId>legacy-imglib1</artifactId>
-      </dependency>
-      <dependency>
-	<groupId>sc.fiji</groupId>
-	<artifactId>bUnwarpJ_</artifactId>
-      </dependency>
       -->
       <dependency>
 	<!-- used for local binary pattern texture features -->
