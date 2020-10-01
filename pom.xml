@@ -9,7 +9,7 @@
 
   <name>mitobo-pom</name>
   <description>MiToBo - A Microscope Image Analysis TOolBox</description> 
-  <url>http://www.informatik.uni-halle.de/mitobo</url>
+  <url>https://www.informatik.uni-halle.de/mitobo</url>
   <inceptionYear>2018</inceptionYear>
 
   <parent>
@@ -48,7 +48,7 @@
       <email>birgit.moeller@informatik.uni-halle.de</email>
       <name>Birgit Moeller</name>
       <organization>Martin Luther University Halle-Wittenberg</organization>
-      <organizationUrl>http://www.informatik.uni-halle.de/moeller</organizationUrl>
+      <organizationUrl>https://www.informatik.uni-halle.de/moeller</organizationUrl>
       <roles>
 	<role>Developer</role>
       </roles>
@@ -59,7 +59,7 @@
       <email>stefan.posch@informatik.uni-halle.de</email>
       <name>Stefan Posch</name>
       <organization>Martin Luther University Halle-Wittenberg</organization>
-      <organizationUrl>http://www.informatik.uni-halle.de/posch</organizationUrl>
+      <organizationUrl>https://www.informatik.uni-halle.de/posch</organizationUrl>
       <roles>
 	<role>Developer</role>
       </roles>
@@ -179,7 +179,7 @@
     </repository>
     <repository>
       <id>imagej.public</id>
-      <url>http://maven.imagej.net/content/groups/public</url>
+      <url>https://maven.imagej.net/content/groups/public</url>
     </repository>
   </repositories>
 
