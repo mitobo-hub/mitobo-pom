@@ -29,7 +29,7 @@
     <native.libdir>lib64</native.libdir>
 
     <!-- versions of additional artifacts we depend on -->
-    <commons.lang3.version>3.9</commons.lang3.version>
+    <commons.lang3.version>3.12.0</commons.lang3.version>
     <ejml.version>0.25</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
     <imagej.ridge-detection.version>1.4.1</imagej.ridge-detection.version>
