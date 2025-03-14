@@ -29,15 +29,13 @@
     <native.libdir>lib64</native.libdir>
 
     <!-- versions of additional artifacts we depend on -->
-    <commons.lang3.version>3.12.0</commons.lang3.version>
-    <ejml.version>0.25</ejml.version>
     <geopolygons.version>4.0</geopolygons.version>
     <imagej.ridge-detection.version>1.4.1</imagej.ridge-detection.version>
     <jfeaturelib.version>1.6.3</jfeaturelib.version>
     <jri.version>0.9-9</jri.version>
     <jstacs.version>2.3</jstacs.version>
     <jtransforms.version>3.1</jtransforms.version>
-    <libsvm.version>3.31</libsvm.version>
+    <libsvm.version>3.35</libsvm.version>
     <sc.fiji.mpicbg-trakem2.version>1.2.3</sc.fiji.mpicbg-trakem2.version>
     
   </properties>
@@ -90,13 +88,18 @@
   <dependencyManagement>
     <dependencies>
 
+      <!-- Just for information: dependencies imported from pom-scijava:
+	   - gov.nist.math:jama
+	   - ome:formats-api
+	   - ome:formats-bsd
+	   - org.apache.commons:commons-lang3
+     - org.ejml:ejml-all
+	   - org.jfree:jfreechart
+	   - nz.ac.waikato.cms.weka:weka-dev
+      -->
+
       <!-- Compile dependencies -->
 
-      <dependency>
-	<groupId>com.googlecode.efficient-java-matrix-library</groupId>
-	<artifactId>ejml</artifactId>
-	<version>${ejml.version}</version>
-      </dependency>
       <dependency>
 	<groupId>tw.edu.ntu.csie</groupId>
 	<artifactId>libsvm</artifactId>
@@ -107,13 +110,6 @@
 	<artifactId>JRI</artifactId>
 	<version>${jri.version}</version>
       </dependency>
-      <!-- currently not in use 
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${commons.lang3.version}</version>
-	</dependency>
-      -->
       <dependency>
 	<!-- used for local binary pattern texture features -->
 	<groupId>de.lmu.ifi.dbs.jfeaturelib</groupId>
